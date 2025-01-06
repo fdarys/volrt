@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 90%;
+            max-width: 400px;
+            border: 2px solid #ccc;
+        }
+
+        .vote-image {
+            background-image: url('vote-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .vote-info {
+            padding: 20px;
+        }
+
+        .vote-info h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 98.4%; /* Adjust percentage based on progress */
+            background-color: #4caf50;
+            text-align: right;
+            padding-right: 5px;
+            line-height: 20px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .vote-details {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .vote-with-instagram {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .vote-with-email {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .vote-with-instagram:hover {
+            background-color: #0056b3;
+        }
+
+        .vote-with-email:hover {
+            background-color: #a71d2a;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vote-image">
+            <h1>YOUR VOTE COUNTS</h1>
+        </div>
+        <div class="vote-info">
+            <h2>Ambassador Program</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar">5600 out of 5688</div>
+            </div>
+            <p class="vote-details">Total Votes to Win: 88</p>
+        </div>
+        <div class="buttons">
+            <button class="vote-with-instagram">VOTE WITH INSTAGRAM</button>
+            <button class="vote-with-email">VOTE WITH EMAIL</button>
+        </div>
+        <div class="footer">
+            <p>Someone from Ukraine named Sabrina Teplciy just voted.</p>
+        </div>
+    </div>
+</body>
+</html>
